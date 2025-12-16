@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		357813932EE8D9CD0090E906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3578138F2EE8D9CD0090E906 /* Assets.xcassets */; };
+		357813942EE8D9CD0090E906 /* RichTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813902EE8D9CD0090E906 /* RichTextEditorView.swift */; };
+		357813952EE8D9CD0090E906 /* RichNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813912EE8D9CD0090E906 /* RichNotesApp.swift */; };
+		357813982EE8D9E90090E906 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813972EE8D9E90090E906 /* Color+Extension.swift */; };
+		3578139A2EE8DA190090E906 /* SelectionStyleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813992EE8DA190090E906 /* SelectionStyleHelper.swift */; };
+		3578139D2EEA31550090E906 /* FormatStyleButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578139C2EEA31550090E906 /* FormatStyleButtons.swift */; };
+		3578139F2EEA36DC0090E906 /* MoreFormattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578139E2EEA36DC0090E906 /* MoreFormattingView.swift */; };
+		357813A12EEF3A0F0090E906 /* SelectBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813A02EEF3A0F0090E906 /* SelectBackground.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		357813722EE8D9390090E906 /* RichNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3578138F2EE8D9CD0090E906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		357813902EE8D9CD0090E906 /* RichTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextEditorView.swift; sourceTree = "<group>"; };
+		357813912EE8D9CD0090E906 /* RichNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichNotesApp.swift; sourceTree = "<group>"; };
+		357813972EE8D9E90090E906 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		357813992EE8DA190090E906 /* SelectionStyleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionStyleHelper.swift; sourceTree = "<group>"; };
+		3578139C2EEA31550090E906 /* FormatStyleButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatStyleButtons.swift; sourceTree = "<group>"; };
+		3578139E2EEA36DC0090E906 /* MoreFormattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreFormattingView.swift; sourceTree = "<group>"; };
+		357813A02EEF3A0F0090E906 /* SelectBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		357813742EE8D9390090E906 /* RichNotes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RichNotes;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3578136F2EE8D9390090E906 /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		357813692EE8D9380090E906 = {
 			isa = PBXGroup;
 			children = (
-				357813742EE8D9390090E906 /* RichNotes */,
+				357813922EE8D9CD0090E906 /* RichNotes */,
 				357813732EE8D9390090E906 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,37 @@
 				357813722EE8D9390090E906 /* RichNotes.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		357813922EE8D9CD0090E906 /* RichNotes */ = {
+			isa = PBXGroup;
+			children = (
+				3578139B2EEA31000090E906 /* Keyboard Toolbar */,
+				357813962EE8D9DC0090E906 /* Helpers */,
+				3578138F2EE8D9CD0090E906 /* Assets.xcassets */,
+				357813902EE8D9CD0090E906 /* RichTextEditorView.swift */,
+				357813912EE8D9CD0090E906 /* RichNotesApp.swift */,
+			);
+			path = RichNotes;
+			sourceTree = "<group>";
+		};
+		357813962EE8D9DC0090E906 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				357813992EE8DA190090E906 /* SelectionStyleHelper.swift */,
+				357813972EE8D9E90090E906 /* Color+Extension.swift */,
+				357813A02EEF3A0F0090E906 /* SelectBackground.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3578139B2EEA31000090E906 /* Keyboard Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				3578139C2EEA31550090E906 /* FormatStyleButtons.swift */,
+				3578139E2EEA36DC0090E906 /* MoreFormattingView.swift */,
+			);
+			path = "Keyboard Toolbar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +101,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				357813742EE8D9390090E906 /* RichNotes */,
 			);
 			name = RichNotes;
 			packageProductDependencies = (
@@ -109,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357813932EE8D9CD0090E906 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3578139D2EEA31550090E906 /* FormatStyleButtons.swift in Sources */,
+				357813942EE8D9CD0090E906 /* RichTextEditorView.swift in Sources */,
+				357813982EE8D9E90090E906 /* Color+Extension.swift in Sources */,
+				357813A12EEF3A0F0090E906 /* SelectBackground.swift in Sources */,
+				3578139A2EE8DA190090E906 /* SelectionStyleHelper.swift in Sources */,
+				3578139F2EEA36DC0090E906 /* MoreFormattingView.swift in Sources */,
+				357813952EE8D9CD0090E906 /* RichNotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
