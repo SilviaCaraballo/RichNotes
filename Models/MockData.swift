@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  MockData.swift
 //  RichNotes
 //
 //  Created by Silvia Caraballo Fernandez on 16/12/25.
@@ -21,9 +21,15 @@ struct MockData: PreviewModifier {
             container.mainContext.insert(todo)
             let important = Category(name:"important", hexColor: "FF0000")
             container.mainContext.insert(important)
+            let note = RichTextNote.sample
+            important.notes.append(note)
             return container
         } catch {
             fatalError()
         }
     }
+}
+
+extension PreviewTrait where T == Preview.ViewTraits {
+    static var mockData: Self = .modifier(MockData())
 }
