@@ -18,6 +18,8 @@
 		357813E02EF1C7CD0090E906 /* RichTextNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813DF2EF1C7CD0090E906 /* RichTextNote.swift */; };
 		357813E22EF1CDC50090E906 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813E12EF1CDC50090E906 /* Category.swift */; };
 		357813E42EF1D3340090E906 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813E32EF1D3340090E906 /* MockData.swift */; };
+		357813E72EF223400090E906 /* 1.NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813E62EF223400090E906 /* 1.NotesView.swift */; };
+		357813E92EF2365A0090E906 /* 2.NotesEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357813E82EF2365A0090E906 /* 2.NotesEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		357813DF2EF1C7CD0090E906 /* RichTextNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextNote.swift; sourceTree = "<group>"; };
 		357813E12EF1CDC50090E906 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		357813E32EF1D3340090E906 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		357813E62EF223400090E906 /* 1.NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.NotesView.swift; sourceTree = "<group>"; };
+		357813E82EF2365A0090E906 /* 2.NotesEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.NotesEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +53,6 @@
 		357813692EE8D9380090E906 = {
 			isa = PBXGroup;
 			children = (
-				357813DE2EF1C7A40090E906 /* Models */,
 				357813922EE8D9CD0090E906 /* RichNotes */,
 				357813732EE8D9390090E906 /* Products */,
 			);
@@ -66,11 +69,13 @@
 		357813922EE8D9CD0090E906 /* RichNotes */ = {
 			isa = PBXGroup;
 			children = (
+				357813E52EF2232D0090E906 /* Views */,
 				3578139B2EEA31000090E906 /* Keyboard Toolbar */,
 				357813962EE8D9DC0090E906 /* Helpers */,
 				3578138F2EE8D9CD0090E906 /* Assets.xcassets */,
 				357813902EE8D9CD0090E906 /* RichTextEditorView.swift */,
 				357813912EE8D9CD0090E906 /* RichNotesApp.swift */,
+				357813DE2EF1C7A40090E906 /* Models */,
 			);
 			path = RichNotes;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 				357813E32EF1D3340090E906 /* MockData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		357813E52EF2232D0090E906 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				357813E62EF223400090E906 /* 1.NotesView.swift */,
+				357813E82EF2365A0090E906 /* 2.NotesEditorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +193,11 @@
 				3578139D2EEA31550090E906 /* FormatStyleButtons.swift in Sources */,
 				357813942EE8D9CD0090E906 /* RichTextEditorView.swift in Sources */,
 				357813982EE8D9E90090E906 /* Color+Extension.swift in Sources */,
+				357813E92EF2365A0090E906 /* 2.NotesEditorView.swift in Sources */,
 				357813A12EEF3A0F0090E906 /* SelectBackground.swift in Sources */,
 				3578139A2EE8DA190090E906 /* SelectionStyleHelper.swift in Sources */,
 				357813E42EF1D3340090E906 /* MockData.swift in Sources */,
+				357813E72EF223400090E906 /* 1.NotesView.swift in Sources */,
 				357813E22EF1CDC50090E906 /* Category.swift in Sources */,
 				3578139F2EEA36DC0090E906 /* MoreFormattingView.swift in Sources */,
 				357813E02EF1C7CD0090E906 /* RichTextNote.swift in Sources */,
