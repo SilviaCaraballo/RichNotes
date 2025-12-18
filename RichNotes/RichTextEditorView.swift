@@ -15,36 +15,7 @@ struct RichTextEditorView: View {
     
     var body: some View {
         NavigationStack {
-            TextEditor(text: $text, selection: $selection)
-                .focused($isFocused)
-                .padding()
-                .scrollBounceBehavior(.basedOnSize)
-                .navigationTitle("RichText Editor")
-                .toolbarTitleDisplayMode(.inlineLarge)
-                .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Group {
-                            FormatStyleButtons(text: $text, selection: $selection)
-                            Spacer()
-                            Button {
-                                moreEditing.toggle()
-                            } label: {
-                                Image(systemName: "textformat.alt")
-                            }
-                            Button {
-                                isFocused = false
-                            } label: {
-                                Image(systemName: "keyboard.chevron.compact.down")
-                            }
-                        }
-                        .disabled(isFocused)
-                    }
-                }
-                .sheet(isPresented: $moreEditing) {
-                    MoreFormattingView(text: $text, selection: $selection)
-                        .presentationDetents([.height(200)])
-                }
-
+            
         }
     }
 }

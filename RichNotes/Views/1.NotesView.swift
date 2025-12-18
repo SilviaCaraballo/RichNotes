@@ -10,8 +10,10 @@ import SwiftData
 
 struct NotesView: View {
     @Query private var notes: [RichTextNote]
+    @Environment(\.modelContext) var context
+    @State private var path = NavigationPath()
     var body: some View {
-        NavigationStack{
+        NavigationStack (path: $path) {
             Group {
                 if !notes.isEmpty {
                     List {
@@ -27,6 +29,12 @@ struct NotesView: View {
                                 }
                             }
                         }
+                        .onDelete { indices in
+                            for index in indices {
+                                context.delete(notes[index])
+                            }
+                            try? context.save()
+                        }
                     }
                 } else {
                     ContentUnavailableView("Create your first note", systemImage: "square.and.pencil")
@@ -36,7 +44,16 @@ struct NotesView: View {
                 .navigationTitle("Rich Notes")
                 .toolbarTitleDisplayMode(.inlineLarge)
                 .navigationDestination(for: RichTextNote.self) { note in
-                    
+                    NotesEditorView(note: note)
+                }
+                .toolbar {
+                    Button {
+                        let newNote = RichTextNote(text: "")
+                        context.insert(newNote)
+                        path.append(newNote)
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                 }
         }
     }

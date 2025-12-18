@@ -69,12 +69,12 @@
 		357813922EE8D9CD0090E906 /* RichNotes */ = {
 			isa = PBXGroup;
 			children = (
-				357813E52EF2232D0090E906 /* Views */,
 				3578139B2EEA31000090E906 /* Keyboard Toolbar */,
-				357813962EE8D9DC0090E906 /* Helpers */,
 				3578138F2EE8D9CD0090E906 /* Assets.xcassets */,
 				357813902EE8D9CD0090E906 /* RichTextEditorView.swift */,
 				357813912EE8D9CD0090E906 /* RichNotesApp.swift */,
+				357813962EE8D9DC0090E906 /* Helpers */,
+				357813E52EF2232D0090E906 /* Views */,
 				357813DE2EF1C7A40090E906 /* Models */,
 			);
 			path = RichNotes;
